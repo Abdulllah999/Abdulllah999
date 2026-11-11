@@ -1,12 +1,17 @@
+<p align="center">
+  <img src="assets/banner.svg" width="1200" alt="Abdullah Shakeel — Data Science, Artificial Intelligence and Python. Clear questions. Reproducible models. Useful applications." />
+</p>
+
 <div align="center">
-
-# Abdullah Shakeel
-
-### Data Science · Artificial Intelligence · Python
 
 From raw data to models you can inspect and applications you can use.
 
-**Islamabad, Pakistan** · BS Information Technology, Bahria University
+<p>
+  <img src="assets/python.svg" alt="Python" width="86" height="30" />
+  <img src="assets/sql.svg" alt="SQL" width="66" height="30" />
+  <img src="assets/machine-learning.svg" alt="Machine Learning" width="159" height="30" />
+  <img src="assets/flask.svg" alt="Flask" width="77" height="30" />
+</p>
 
 [Selected projects](#selected-projects) &nbsp; / &nbsp; [Technical toolkit](#technical-toolkit) &nbsp; / &nbsp; [Background](#background)
 
