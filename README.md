@@ -14,7 +14,7 @@ My portfolio connects **data → models → usable applications**, with visible 
 | --- | --- | --- |
 | [Interview Evidence Lab](https://github.com/Abdulllah999/interview-evidence-lab) | Explicit skill evidence and human interview prompts; no automated hiring decisions | Python · Flask · text processing |
 | [Sentiment Baseline Lab](https://github.com/Abdulllah999/sentiment-baseline-lab) | Train-only TF-IDF pipeline, three-class baseline and unknown-vocabulary abstention | Python · Scikit-learn · Pandas |
-| [Market Forecast Lab](https://github.com/Abdulllah999/AI-Powered-Retention-Command-Center-Churn-Simulator/tree/main/projects/market-forecast-lab) | Walk-forward evaluation, sentiment ablation and persistence baseline | Python · Flask · time series |
+| [Market Forecast Lab](https://github.com/Abdulllah999/market-forecast-lab) | Walk-forward evaluation, sentiment ablation and persistence baseline | Python · Flask · time series |
 | [Health Pattern Explorer](https://github.com/Abdulllah999/health-patterns-demo) | Synthetic classification, validated API and educational limits; Flutter companion source | Python · Flask · Scikit-learn · Flutter scaffold |
 | [Retention Command Center](https://github.com/Abdulllah999/AI-Powered-Retention-Command-Center-Churn-Simulator) | Interactive synthetic scenarios, an explicit formula baseline and reconciled SQL cohort reports | Streamlit · Plotly · Scikit-learn |
 
@@ -29,7 +29,7 @@ The four lab projects are **new portfolio implementations prepared in November 2
 
 **Market Forecast Lab**
 
-![Forecasting demo](https://raw.githubusercontent.com/Abdulllah999/AI-Powered-Retention-Command-Center-Churn-Simulator/main/projects/market-forecast-lab/artifacts/demo.png)
+![Forecasting demo](https://raw.githubusercontent.com/Abdulllah999/market-forecast-lab/main/artifacts/demo.png)
 
 </details>
 
