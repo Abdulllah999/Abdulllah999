@@ -19,54 +19,60 @@ From raw data to models you can inspect and applications you can use.
 
 ---
 
-## Turning questions into working applications
+## Data science, with the evidence attached
 
-I work with Python, SQL and machine learning to explore data, build predictive workflows and create useful interfaces. My interests span applied AI, natural language processing, time-series analysis and data visualization.
+I work with **Python, SQL and machine learning** to turn analytical questions into reproducible experiments and usable applications. My background includes operational reporting and billing-data analysis; my current portfolio focuses on NLP, model evaluation and Python interfaces.
 
-My approach is straightforward: **start with a clear question, establish a baseline, and make the result reproducible.**
+For each project, I aim to make three things easy to inspect: **the decision, the result and the limitation.**
 
 ## Selected projects
 
-| Project | Focus | What you can review |
-| :--- | :--- | :--- |
-| **[Market Forecast Lab](https://github.com/Abdulllah999/market-forecast-lab)** | Time series · Python · Flask | Expanding-window evaluation, sentiment ablation and comparison with a persistence baseline. |
-| **[Sentiment Baseline Lab](https://github.com/Abdulllah999/sentiment-baseline-lab)** | NLP · Scikit-learn · Pandas | A three-class TF-IDF pipeline with train-only preprocessing, authored holdout evaluation and unknown-vocabulary abstention. |
-| **[Retention Command Center](https://github.com/Abdulllah999/AI-Powered-Retention-Command-Center-Churn-Simulator)** | Analytics · Streamlit · SQL | Interactive customer scenarios, explicit model baselines and SQL cohort reports with reconciliation tests. |
-| **[Interview Evidence Lab](https://github.com/Abdulllah999/interview-evidence-lab)** | Text processing · Flask | Skill-term extraction and structured interview prompts for human review. |
-| **[Health Pattern Explorer](https://github.com/Abdulllah999/health-patterns-demo)** | Model serving · REST API | An educational classification API using synthetic patterns, with input validation and a web interface. |
+### Sentiment classification under domain shift
 
-The four labs are new portfolio implementations inspired by earlier project ideas. They use authored or synthetic examples; their results demonstrate implementation and evaluation methods. Detailed scope, data provenance and limitations are documented in each repository.
+Can a model trained on product and restaurant reviews transfer to movie reviews? I evaluate a TF-IDF/logistic-regression baseline on an attributed UCI dataset, with source separation, normalized-text deduplication and train-only preprocessing.
+
+**Held-out IMDb:** 995 sentences · **0.7022 macro F1** · 70.95% accuracy versus 49.95% for a majority baseline. The full error file is included. This binary benchmark is separate from the authored three-class web example.
+
+[Code](https://github.com/Abdulllah999/sentiment-baseline-lab) · [Evaluation protocol & findings](https://github.com/Abdulllah999/sentiment-baseline-lab/blob/main/docs/benchmark-findings.md) · [Reproducibility tests](https://github.com/Abdulllah999/sentiment-baseline-lab/blob/main/test_benchmark.py)
+
+### Does sentiment improve a next-close forecast?
+
+An expanding-window experiment compares Ridge with and without sentiment against persistence. On 71 synthetic test origins, **persistence has the lowest MAE: 0.7356**, versus 0.9177 for Ridge with sentiment. The result demonstrates why baseline comparison and time-aware validation matter.
+
+[Code & measured comparison](https://github.com/Abdulllah999/market-forecast-lab) · [Every held-out prediction](https://github.com/Abdulllah999/market-forecast-lab/blob/main/artifacts/predictions.csv)
+
+### Retention scenarios & SQL cohort analysis
+
+A Streamlit dashboard paired with a SQLite report using a CTE, conditional aggregation and a window denominator. Tests reconcile cohort counts, spend sums and thresholds to the synthetic source. The model is compared with both a mean baseline and the exact generating formula.
+
+[Dashboard & results](https://github.com/Abdulllah999/AI-Powered-Retention-Command-Center-Churn-Simulator) · [SQL query](https://github.com/Abdulllah999/AI-Powered-Retention-Command-Center-Churn-Simulator/blob/main/analytics/cohorts.sql) · [Reconciliation tests](https://github.com/Abdulllah999/AI-Powered-Retention-Command-Center-Churn-Simulator/blob/main/test_report.py)
+
+**Additional Python work:** [Resume skill evidence](https://github.com/Abdulllah999/interview-evidence-lab), a deterministic Flask workflow for human review; and [synthetic model serving](https://github.com/Abdulllah999/health-patterns-demo), a validated educational API with unvalidated Flutter companion source.
 
 ## Technical toolkit
 
-| Area | Technologies |
+| Demonstrated in this portfolio | Evidence |
 | :--- | :--- |
-| **Data & analysis** | Python, SQL, Pandas, NumPy, Excel |
-| **Machine learning & NLP** | Scikit-learn, TensorFlow, NLTK |
-| **Applications & APIs** | Flask, REST APIs, JavaScript, React |
-| **Visualization & reporting** | Plotly, Power BI, Tableau |
-| **Databases & development** | MySQL, MongoDB, Git, Docker |
+| **Python, Pandas, NumPy, Scikit-learn** | Text pipelines, feature engineering, baseline evaluation and public-data benchmarking |
+| **SQL & analytical reporting** | SQLite cohort queries, window functions and reconciliation checks |
+| **Flask, REST APIs, Streamlit, Plotly** | Validated interfaces, model-serving endpoints and interactive dashboards |
+| **Git, pytest, GitHub Actions** | Versioned source, functional tests and automated reproduction |
 
-The projects above show where these skills are demonstrated in code.
-
-## How I approach a project
-
-- **Make the analysis traceable.** Document the data, assumptions, preprocessing and evaluation method.
-- **Test the useful comparison.** Compare models with simple baselines and keep preprocessing within the training workflow.
-- **Make the work reviewable.** Include setup instructions, examples, validation and clear limitations.
+Additional background: TensorFlow, NLTK, React, Flutter, MySQL, MongoDB, Excel, Power BI, Tableau and Docker. The repositories distinguish implemented features from unvalidated scaffolding.
 
 ## Background
 
-**Virtual Assistant / Data and Billing Analyst · Ezcure MBS**  
-October 2023 – May 2025  
-Worked with medical billing data, Excel dashboards, reporting and claim tracking.
+**Virtual Assistant / Data and Billing Analyst · Ezcure MBS**<br>
+October 2023 – May 2025<br>
+Medical billing data, Excel dashboards, reporting and claim tracking.
 
-**BS Information Technology · Bahria University, Islamabad**  
-2021–2025 · Focus: Data Science and Artificial Intelligence  
-CGPA: **3.43 / 4.00**
+**BS Information Technology · Bahria University, Islamabad**<br>
+2021–2025 · Focus: Data Science and Artificial Intelligence · CGPA: **3.43 / 4.00**
 
 ## Career focus
 
-Seeking opportunities in **Data Science, Machine Learning and AI**, with a focus on Python development, analytical applications and reproducible model workflows.
+Seeking **Data Science, Machine Learning and AI** opportunities where I can contribute Python development, analytical reasoning and reproducible evaluation.
+
+The lab projects are current portfolio implementations inspired by earlier project ideas. Data provenance, methodology and scope are documented in each repository; no deployment or real-world business outcome is claimed.
 
 [Explore all repositories →](https://github.com/Abdulllah999?tab=repositories)
